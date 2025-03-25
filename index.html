@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Mon Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid green;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .biography, .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        .biography:hover, .contact-info:hover {
+            background: #e0e0e0;
+        }
+        h2 {
+            color: green;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .nav-link:hover {
+            color: white !important;
+            transform: scale(1.1);
+            color: black;
+        }
+        .navbar-brand img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-brand img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/obm_logo.png.webp" alt="Logo OBM" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://obaounonse.github.io/mon-cv/">mon cv</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <h2>Présentation</h2>
+                <img src="images/baounonse.jpg" alt="Photo de profil" class="profile-img">
+                <div class="contact-info mt-3">
+                    <p><strong>Nom :</strong> Ouattara</p>
+                    <p><strong>Prénom :</strong> Baounonse</p>
+                    <p><strong>Email :</strong> obaounonse@gmail.com</p>
+                    <p><strong>Téléphone :</strong> 0566643382</p>
+                    <p><strong>Adresse :</strong> Bouaké, Côte d'Ivoire</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Biographie</h2>
+                <div class="biography">
+                    <article> 
+                        
+                        <strong>Ouattara Baounonse</strong> est un jeune développeur web spécialisé en Front-End, passionné par la programmation et l’innovation numérique. Originaire de Bouaké, en Côte d’Ivoire, il poursuit actuellement une Licence 2 en Développement d’Application et E-Service à l’Université Virtuelle de Côte d’Ivoire (UVCI).  
+                        
+                        Son parcours académique débute à l'EPP Balanzie, où il obtient son CEPE en 2014. Il poursuit ensuite ses études au Collège Municipal de Satama-Sokoro, obtenant son BEPC en 2018, puis son BAC C au Lycée Moderne de Belleville Bouaké en 2023.  
+                        
+                        Doté de solides compétences en développement web, notamment en HTML, CSS et Bootstrap, il maîtrise également des outils bureautiques tels que Word et Excel. En plus de son expertise technique, il s’est formé en télévente et en vente transactionnelle et consultative, ce qui lui confère une polyvalence dans le domaine commercial.  
+                        
+                        Titulaire de certifications en Intelligence Artificielle et en Sécurité Routière, Ouattara est un professionnel curieux et engagé, aimant participer à des projets collaboratifs. Ses centres d’intérêt incluent la programmation, la musique et le football.  
+                        
+                        Actuellement à la recherche d’un emploi en tant que développeur web junior, il aspire à mettre en pratique ses compétences et à acquérir une expérience significative dans le domaine du développement web et des technologies numériques.  
+                    </article>
+               </div>
+            </div>
+    </div>
+    
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 Ouattara Baounonse - Tous droits réservés.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

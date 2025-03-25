@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+}
+.left{
+    width: 50%;
+    height: 550px;
+    position: relative;
+    float: left;
+}
+.right{
+    width: 50%;
+    height: 550px;
+    position: relative;
+    float: right;
+   
+}
+.maPhoto{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+img{
+    border-radius: 50%;
+}
+.presentation{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: green;
+    border: 1px solid ;
+    
+}
+.description{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+.grand{
+    gap: 7px;
+}
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
